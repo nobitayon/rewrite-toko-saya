@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header, Slider } from '../../Components/Atoms'
 import { ProductSection } from '../../Components/Molecules'
+import {products} from '../../dummy-data/data'
 
 export default function Home() {
   return (
@@ -10,8 +11,16 @@ export default function Home() {
       </div>
       <div className='pt-20'></div>
       <Slider/>
-      <ProductSection titleSection="Produk Terlaris" titleMore="Lihat Semua>"/>
-      <ProductSection titleSection="Produk Favorit" titleMore="Lihat Semua>"/>
+      <ProductSection 
+        titleSection="Produk Terlaris" 
+        titleMore="Lihat Semua>"
+        data={products}
+      />
+      <ProductSection 
+        titleSection="Produk Favorit" 
+        titleMore="Lihat Semua>"
+        data={products}
+      />
     </div>
   )
 }
