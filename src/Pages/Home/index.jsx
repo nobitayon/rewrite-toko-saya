@@ -6,7 +6,7 @@ import {products} from '../../dummy-data/data'
 export default function Home() {
   return (
     <div className='px-[10%] pb-20 w-full min-h-screen'>
-      <div className='fixed top-0 left-0 w-full px-[10%] bg-gray-50/60'>
+      <div className='fixed top-0 left-0 w-full px-[10%] bg-gray-50/60 z-10'>
         <Header/>  
       </div>
       <div className='pt-20'></div>
